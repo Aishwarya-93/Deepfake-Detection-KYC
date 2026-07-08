@@ -21,4 +21,4 @@ dependencies:
   - wheel=0.47.0
   - xz=5.8.2
   - zlib=1.3.2
-prefix: /opt/anaconda3/envs/deepfake
+
