@@ -16,18 +16,53 @@ Preesh
 
 Detect deepfake videos during real-time KYC verification using lightweight CNN models and liveness detection.
 
-## Technologies
+## Research Objective
 
-Python
+To detect deepfake videos during real-time KYC verification under real-world constraints such as mobile devices, video compression, and varying lighting conditions.
 
-PyTorch
+## Datasets
 
-OpenCV
+### Primary Dataset
 
-MediaPipe
+- DFDC (DeepFake Detection Challenge)
 
-Google Colab
+### Secondary Dataset
 
-GitHub
+- DeeperForensics-1.0
 
-VS Code
+---
+
+
+## Tech Stack
+
+- Python
+- OpenCV
+- PyTorch
+- NumPy
+- Pandas
+- Scikit-Learn
+- Git
+- GitHub
+- VS Code
+- Anaconda
+
+---
+
+## Repository Structure
+
+```text
+data/
+src/
+docs/
+outputs/
+reports/
+presentations/
+```
+
+---
+
+## Current Progress
+
+- ✅ Environment Setup Complete
+- ✅ Dataset Selection Complete
+- 🔄 Phase 3: Dataset Acquisition & Exploration
