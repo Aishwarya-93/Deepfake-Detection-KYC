@@ -1,18 +1,37 @@
 from pathlib import Path
 
-# Dataset location inside the repository
-DATASET_PATH = Path("data/raw/ff-c23")
+# ----------------------------
+# Dataset Path
+# ----------------------------
 
-print("=" * 50)
-print("FaceForensics++ Dataset Inspection")
-print("=" * 50)
+DATASET_PATH = Path("data/raw/FaceForensics++_C23")
+
+# ----------------------------
+# Check Dataset
+# ----------------------------
 
 if not DATASET_PATH.exists():
-    print(f"Dataset folder not found: {DATASET_PATH}")
+    print("Dataset not found!")
     exit()
 
-print("\nFolders found:\n")
+print("=" * 60)
+print("FaceForensics++ Dataset Inspection")
+print("=" * 60)
+
+print("\nDataset Location:")
+print(DATASET_PATH)
+
+print("\nFolders Found:\n")
+
+folders = []
 
 for folder in sorted(DATASET_PATH.iterdir()):
+
     if folder.is_dir():
-        print(f"- {folder.name}")
+      if folder.name != "csv":
+  
+        folders.append(folder.name)
+
+        print(f"• {folder.name}")
+
+print("\nTotal folders:", len(folders))
