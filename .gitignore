@@ -1,14 +1,16 @@
-# Python
+# Dataset
+data/raw/
+data/metadata/
+
+# Zip files
+*.zip
+
+# Python cache
 __pycache__/
-*.py[cod]
-*.pyo
+*.pyc
 
-# Jupyter
+# Jupyter checkpoints
 .ipynb_checkpoints/
-
-# Conda
-.env
-.conda/
 
 # VS Code
 .vscode/
@@ -16,6 +18,3 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
-
-# Logs
-*.log
