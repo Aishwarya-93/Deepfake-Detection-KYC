@@ -40,3 +40,15 @@ def load_metadata():
     print(f"Loaded {len(df)} records.")
 
     return df
+
+def check_missing_values(df):
+    """
+    Check for missing values in the metadata.
+    """
+
+    missing = df.isnull().sum()
+
+    print("\nMissing Values:")
+    print(missing)
+
+    return missing
