@@ -1,6 +1,20 @@
 # Dataset
+# Raw FaceForensics++ dataset is ignored.
+# Metadata CSVs and official train/val/test splits are version-controlled.
+
 data/raw/
-data/metadata/
+
+# Metadata
+data/metadata/*
+!data/metadata/.gitkeep
+!data/metadata/master_metadata.csv
+
+# Dataset Splits
+data/splits/*
+!data/splits/.gitkeep
+!data/splits/train.csv
+!data/splits/validation.csv
+!data/splits/test.csv
 
 # Zip files
 *.zip
