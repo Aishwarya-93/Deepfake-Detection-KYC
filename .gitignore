@@ -16,6 +16,21 @@ data/splits/*
 !data/splits/validation.csv
 !data/splits/test.csv
 
+# Processed face-image dataset (regenerable from data/raw via src/dataset)
+data/processed/*
+!data/processed/.gitkeep
+
+# Local sample data
+data/sample/*
+!data/sample/.gitkeep
+
+# Kaggle-downloaded processed dataset used by Lab 12 / Lab 14
+data/kaggle_processed/
+
+# Generated outputs (frames, face crops, checkpoints, logs, predictions, graphs)
+outputs/*/*
+!outputs/*/.gitkeep
+
 # Zip files
 *.zip
 
