@@ -15,6 +15,7 @@ data/splits/*
 !data/splits/train.csv
 !data/splits/validation.csv
 !data/splits/test.csv
+!data/splits/deepfakedetection_test.csv
 
 # Processed face-image dataset (regenerable from data/raw via src/dataset)
 data/processed/*
