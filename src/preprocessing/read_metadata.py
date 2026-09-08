@@ -21,13 +21,6 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 DATASET_PATH = PROJECT_ROOT / "data" / "raw" / "FaceForensics++_C23"
 
-if not DATASET_PATH.exists():
-    raise FileNotFoundError(
-        "\nDataset not found!\n"
-        "Download FaceForensics++ using the Lab setup notebook "
-        "before running this script."
-    )
-
 CSV_FOLDER = DATASET_PATH / "csv"
 
 OUTPUT_FOLDER = PROJECT_ROOT / "data" / "metadata"
@@ -116,6 +109,13 @@ def save_metadata(df):
 # ==========================================================
 
 def main():
+
+    if not DATASET_PATH.exists():
+        raise FileNotFoundError(
+            "\nDataset not found!\n"
+            "Download FaceForensics++ using the Lab setup notebook "
+            "before running this script."
+        )
 
     metadata = load_csv_files()
 
